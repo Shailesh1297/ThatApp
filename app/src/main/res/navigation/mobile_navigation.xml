@@ -23,5 +23,17 @@
         android:label="@string/menu_product"
         tools:layout="@layout/fragment_add_product">
     </fragment>
+    <fragment
+        android:id="@+id/nav_deliver"
+        android:name="com.example.thatapp.user.ui.deliver.DeliverProduct"
+        android:label="@string/menu_deliver"
+        tools:layout="@layout/fragment_deliver_product">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_message"
+        android:name="com.example.thatapp.user.ui.message.MessageFragment"
+        android:label="@string/menu_message"
+        tools:layout="@layout/fragment_message">
+    </fragment>
 
 </navigation>

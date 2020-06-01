@@ -1,10 +1,14 @@
 package com.example.thatapp.user;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ImageView;
 
 import com.example.thatapp.R;
+import com.example.thatapp.user.ui.profile.Profile;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -20,6 +24,7 @@ import androidx.appcompat.widget.Toolbar;
 public class UserHome extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    ImageView profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,20 +32,22 @@ public class UserHome extends AppCompatActivity {
         setContentView(R.layout.activity_user_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
+        profile=navigationView.getHeaderView(0).findViewById(R.id.profile_image_drawer);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               Intent intent=new Intent(getApplicationContext(), Profile.class);
+               startActivity(intent);
+
+            }
+        });
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_order,R.id.nav_product)
+                R.id.nav_home, R.id.nav_order,R.id.nav_product,R.id.nav_deliver,R.id.nav_message)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
