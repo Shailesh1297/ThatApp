@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/deliver_top_head">
+    <TextView
+        android:id="@+id/deliver_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="productId"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/deliver_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="productName"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/deliver_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="productPrice"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/item_delivery_status"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_menu_share" />
+
+</LinearLayout>

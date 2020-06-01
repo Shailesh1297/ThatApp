@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".user.ui.orders.ShowOrder"></activity>
+        <activity android:name=".user.ui.product.UserProduct"></activity>
+        <activity android:name=".user.ui.orders.ShowOrder" />
         <activity android:name=".user.ui.profile.Profile" />
         <activity android:name=".login.Login">
             <intent-filter>
