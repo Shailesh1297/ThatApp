@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.thatapp.R;
 import com.example.thatapp.connection.Connection;
+import com.example.thatapp.registration.Register;
 import com.example.thatapp.user.UserHome;
 import com.google.gson.Gson;
 
@@ -86,8 +87,8 @@ public class Login extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Intent intent=new Intent(getBaseContext(), Register.class);
-              //  startActivity(intent);
+               Intent intent=new Intent(getBaseContext(), Register.class);
+               startActivity(intent);
             }
         });
 
@@ -188,5 +189,6 @@ public class Login extends AppCompatActivity {
         email=findViewById(R.id.login_email_input);
         password=findViewById(R.id.login_password_input);
         forgetPass=findViewById(R.id.forget_pass);
+        forgetPass.setVisibility(View.GONE);
     }
 }

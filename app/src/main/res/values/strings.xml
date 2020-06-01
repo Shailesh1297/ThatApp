@@ -13,7 +13,9 @@
     <string name="menu_product">Product</string>
     <string name="menu_deliver">Deliver</string>
     <string name="menu_message">Message</string>
+    <string name="menu_about">About</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project_description">Description</string>
 </resources>

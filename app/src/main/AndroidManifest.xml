@@ -16,21 +16,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".user.ui.product.UserProduct"></activity>
+        <activity android:name=".registration.Register"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".user.ui.product.UserProduct" />
         <activity android:name=".user.ui.orders.ShowOrder" />
         <activity android:name=".user.ui.profile.Profile" />
-        <activity android:name=".login.Login">
+        <activity android:name=".login.Login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".user.UserHome"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".user.UserHome"
-            android:label="@string/title_activity_user_home"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".user.ui.home.ShowProduct" />
     </application>
 
