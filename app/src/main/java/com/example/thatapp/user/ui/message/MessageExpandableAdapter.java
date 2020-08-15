@@ -99,9 +99,9 @@ public class MessageExpandableAdapter extends BaseExpandableListAdapter {
         senderName.setText(message.get(i).getSenderName());
         if(message.get(i).getMessageStatus()==0)
         {
-            messageStatus.setImageResource(R.drawable.ic_menu_share);
+            messageStatus.setImageResource(R.drawable.ic_not_delivered);
         }else{
-            messageStatus.setImageResource(R.drawable.ic_menu_send);
+            messageStatus.setImageResource(R.drawable.ic_delivered);
         }
 
         callSender.setOnClickListener(new View.OnClickListener() {

@@ -33,7 +33,7 @@
           android:layout_marginRight="5dp"
           android:layout_weight="1"
           android:minWidth="40dp"
-          android:src="@drawable/ic_menu_share" />
+          android:src="@drawable/ic_not_delivered" />
   </LinearLayout>
 
 

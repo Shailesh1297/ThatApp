@@ -59,9 +59,9 @@ public class OrderAdpater extends BaseAdapter {
         orderAmount.setText(orders.get(i).getItemPrice());
         if(orders.get(i).getDeal()==0)
         {
-            orderStatus.setImageResource(R.drawable.ic_menu_share);
+            orderStatus.setImageResource(R.drawable.ic_not_delivered);
         }else {
-            orderStatus.setImageResource(R.drawable.ic_menu_send);
+            orderStatus.setImageResource(R.drawable.ic_delivered);
         }
 
         ll.setOnClickListener(new View.OnClickListener() {
