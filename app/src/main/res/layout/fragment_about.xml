@@ -14,20 +14,22 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_margin="5dp"
-            android:background="@drawable/ic_menu_gallery"/>
+            android:background="@drawable/university_logo"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:text="@string/project_description"
             android:gravity="center"/>
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/ic_menu_manage"/>
+            android:textSize="18sp"
+            android:text="@string/description"
+            android:layout_margin="5dp"
+            />
+
     </LinearLayout>
 
 
